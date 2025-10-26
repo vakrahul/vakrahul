@@ -8,6 +8,14 @@ on:
   # Allow manually running the workflow from the Actions tab
   workflow_dispatch:
 
+#
+# --- THIS IS THE FIX ---
+# Add these three lines to give the action permission to write
+permissions:
+  contents: write
+# --- END OF FIX ---
+#
+
 jobs:
   build:
     runs-on: ubuntu-latest
