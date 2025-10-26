@@ -6,8 +6,6 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=vakrahul&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
 
-### <img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
-
 - 🔭 I’m currently working on [DSA-weekly-test](https://github.com/vakrahul/dsa-weekly-test-backend)
 - 🌱 I’m currently learning **Backend Development (Java, Spring Boot) and Machine Learning fundamentals to build intelligent systems.**
 - 👯 I’m looking to collaborate on [AI_Interviewer](https://github.com/vakrahul/AI_INTERVIEWER)
@@ -62,6 +60,3 @@
 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
 <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a>
 </p>
-
-### <br clear="both">
-<img src="https://raw.githubusercontent.com/vakrahul/vakrahul/output/snake.svg" alt="Snake animation" />
