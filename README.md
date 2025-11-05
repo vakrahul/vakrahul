@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working on [DSA-weekly-test](https://github.com/vakrahul/dsa-weekly-test-backend)
 - 🌱 I’m currently learning **Backend Development (Java, Spring Boot) and Machine Learning fundamentals to build intelligent systems.**
-- 👯 I’m looking to collaborate on [AI_Interviewer](https://github.com/vakrahul/AI_INTERVIEWER)
+- 🫱🏽‍🫲🏽 I’m looking to collaborate on [AI_Interviewer](https://github.com/vakrahul/AI_INTERVIEWER)
 - 📫 How to reach me **vakitirahul@gmail.com**
 
 ### <h3 align="left">Connect with me:</h3>
