@@ -26,15 +26,23 @@
 
 ### ⚡ Technical Arsenal (3D Icons)
 <p align="center">
-  <a href="#"><img src="https://skillicons.dev/icons?i=java,spring,py,pytorch,tensorflow,mongodb,mysql,nodejs,express,react,ts,bootstrap,html,css,js,postgres,sqlite,selenium&perline=9" /></a>
+  <a href="#">
+    <img src="https://skillicons.dev/icons?i=java,spring,py,pytorch,tensorflow,mongodb,mysql,nodejs,express,react,ts,bootstrap,html,css,js,postgres,sqlite,selenium&perline=9" />
+  </a>
 </p>
 
 ---
 
 ### 📊 Performance Metrics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vakrahul&show_icons=true&theme=dracula&count_private=true" height="180" />
-  <img src="https://streak-stats.demolab.com/?user=vakrahul&theme=dracula" height="180" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=vakrahul&show_icons=true&theme=dracula&cache_seconds=86400" 
+    height="180" 
+  />
+  <img 
+    src="https://streak-stats.demolab.com/?user=vakrahul&theme=dracula&cache_seconds=86400" 
+    height="180" 
+  />
 </p>
 
 ---
@@ -50,6 +58,8 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/vakrahul/vakrahul/output/github-snake.svg" alt="Snake animation" />
 </p>
+
+---
 
 ### 📫 Let's Connect
 <p align="center">
