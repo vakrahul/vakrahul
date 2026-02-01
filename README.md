@@ -18,7 +18,7 @@
 ### 🏆 3D Achievement Trophies
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=vakrahul&theme=dracula&no-frame=false&column=4&margin-w=15&margin-h=15" alt="github trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=vakrahul&theme=dracula&no-frame=false&column=3&margin-w=15" alt="github trophies" />
   </a>
 </p>
 
@@ -33,8 +33,8 @@
 
 ### 📊 Performance Metrics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vakrahul&show_icons=true&theme=dracula&hide_border=false&include_all_commits=true&count_private=true" height="180" />
-  <img src="https://streak-stats.demolab.com/?user=vakrahul&theme=dracula&hide_border=false" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=vakrahul&show_icons=true&theme=dracula&count_private=true" height="180" />
+  <img src="https://streak-stats.demolab.com/?user=vakrahul&theme=dracula" height="180" />
 </p>
 
 ---
