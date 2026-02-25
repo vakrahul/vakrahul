@@ -1,0 +1,67 @@
+<svg width="900" height="100" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes btnIn { from { opacity:0; transform:scale(0.9); } to { opacity:1; transform:scale(1); } }
+      @keyframes waveText {
+        0%,100% { transform: translateY(0); }
+        25%      { transform: translateY(-3px); }
+        75%      { transform: translateY(3px); }
+      }
+      .btn1 { animation: btnIn 0.4s ease 0.1s both; }
+      .btn2 { animation: btnIn 0.4s ease 0.2s both; }
+      .btn3 { animation: btnIn 0.4s ease 0.3s both; }
+      .btn4 { animation: btnIn 0.4s ease 0.4s both; }
+    </style>
+    <linearGradient id="footerG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00fff520"/>
+      <stop offset="50%" stop-color="#ff00aa20"/>
+      <stop offset="100%" stop-color="#00fff520"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="100" fill="#060a0f"/>
+  <rect x="0" y="0" width="900" height="1" fill="url(#footerG)"/>
+  <rect x="0" y="99" width="900" height="1" fill="url(#footerG)"/>
+
+  <!-- Label -->
+  <text x="450" y="22" text-anchor="middle" font-size="9" letter-spacing="5" fill="#ff00aa"
+        font-family="'Share Tech Mono',monospace">📫 ESTABLISH CONNECTION</text>
+
+  <!-- Buttons -->
+  <!-- GitHub -->
+  <g class="btn1">
+    <rect x="100" y="34" width="140" height="36" rx="4" fill="none" stroke="#ffffff50" stroke-width="1"/>
+    <rect x="100" y="34" width="0" height="36" rx="4" fill="#ffffff10">
+      <animate attributeName="width" from="0" to="140" dur="0.4s" begin="0.1s" fill="freeze"/>
+    </rect>
+    <text x="170" y="57" text-anchor="middle" font-size="11" fill="#ffffff" font-family="'Share Tech Mono',monospace" letter-spacing="2">⬡ GITHUB</text>
+  </g>
+  <!-- LinkedIn -->
+  <g class="btn2">
+    <rect x="252" y="34" width="140" height="36" rx="4" fill="none" stroke="#0077b550" stroke-width="1"/>
+    <rect x="252" y="34" width="0" height="36" rx="4" fill="#0077b510">
+      <animate attributeName="width" from="0" to="140" dur="0.4s" begin="0.2s" fill="freeze"/>
+    </rect>
+    <text x="322" y="57" text-anchor="middle" font-size="11" fill="#0077b5" font-family="'Share Tech Mono',monospace" letter-spacing="2">◈ LINKEDIN</text>
+  </g>
+  <!-- Gmail -->
+  <g class="btn3">
+    <rect x="404" y="34" width="140" height="36" rx="4" fill="none" stroke="#d1483650" stroke-width="1"/>
+    <rect x="404" y="34" width="0" height="36" rx="4" fill="#d1483610">
+      <animate attributeName="width" from="0" to="140" dur="0.4s" begin="0.3s" fill="freeze"/>
+    </rect>
+    <text x="474" y="57" text-anchor="middle" font-size="11" fill="#d14836" font-family="'Share Tech Mono',monospace" letter-spacing="2">✉ EMAIL</text>
+  </g>
+  <!-- Portfolio -->
+  <g class="btn4">
+    <rect x="556" y="34" width="140" height="36" rx="4" fill="none" stroke="#00fff550" stroke-width="1"/>
+    <rect x="556" y="34" width="0" height="36" rx="4" fill="#00fff510">
+      <animate attributeName="width" from="0" to="140" dur="0.4s" begin="0.4s" fill="freeze"/>
+    </rect>
+    <text x="626" y="57" text-anchor="middle" font-size="11" fill="#00fff5" font-family="'Share Tech Mono',monospace" letter-spacing="2">⊡ PORTFOLIO</text>
+  </g>
+
+  <!-- tagline -->
+  <text x="450" y="90" text-anchor="middle" font-size="8" letter-spacing="3" fill="#ffffff20"
+        font-family="'Share Tech Mono',monospace">BUILT WITH ♥ BY VAKRAHUL // POWERED BY LATE NIGHTS &amp; CAFFEINE</text>
+</svg>
