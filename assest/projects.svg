@@ -1,0 +1,127 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes cardIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes statusBlink {
+        0%,100% { opacity: 1; }
+        50%      { opacity: 0.3; }
+      }
+      @keyframes scanR {
+        0%   { transform: translateX(-200px); opacity: 0; }
+        10%  { opacity: 0.5; }
+        90%  { opacity: 0.5; }
+        100% { transform: translateX(300px); opacity: 0; }
+      }
+      .card1 { animation: cardIn 0.6s ease 0.1s both; }
+      .card2 { animation: cardIn 0.6s ease 0.3s both; }
+      .card3 { animation: cardIn 0.6s ease 0.5s both; }
+      .blink  { animation: statusBlink 1.5s step-end infinite; }
+      .scan-r { animation: scanR 3s linear infinite; }
+    </style>
+    <filter id="cardGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="barG2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00fff5"/>
+      <stop offset="100%" stop-color="#ff00aa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="220" fill="#060a0f"/>
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#00fff5" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="219" x2="900" y2="219" stroke="#00fff5" stroke-width="1" opacity="0.2"/>
+
+  <!-- Section label -->
+  <text x="20" y="22" font-size="9" letter-spacing="5" fill="#ff00aa" font-family="'Share Tech Mono',monospace">🚀 ACTIVE PROJECTS // MISSION CONTROL</text>
+  <line x1="295" y1="17" x2="880" y2="17" stroke="#ff00aa" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- CARD 1: DSA Weekly Test -->
+  <g class="card1" transform="translate(16,34)">
+    <rect width="268" height="166" rx="6" fill="#060a0f" stroke="#00fff5" stroke-width="1" opacity="0.9"/>
+    <!-- top accent bar -->
+    <rect width="268" height="3" rx="2" fill="url(#barG2)"/>
+    <!-- status dot -->
+    <circle cx="252" cy="20" r="5" fill="#00ff88" class="blink" filter="url(#cardGlow)"/>
+    <!-- scan line -->
+    <rect class="scan-r" x="0" y="0" width="40" height="166" rx="3" fill="url(#barG2)" opacity="0.04"/>
+
+    <text x="16" y="22" font-size="8" letter-spacing="3" fill="#00ff88" font-family="'Share Tech Mono',monospace">● CURRENT BUILD</text>
+    <text x="16" y="46" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">DSA-WEEKLY</text>
+    <text x="16" y="62" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">TEST</text>
+
+    <line x1="16" y1="72" x2="252" y2="72" stroke="#00fff5" stroke-width="0.5" opacity="0.3"/>
+
+    <text x="16" y="88" font-size="9" fill="#00fff5" font-family="'Share Tech Mono',monospace">🔭 Stack</text>
+    <text x="16" y="103" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">Spring Boot · React</text>
+    <text x="16" y="116" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">Automated DSA challenges</text>
+
+    <!-- progress -->
+    <text x="16" y="136" font-size="7" fill="#00fff560" font-family="'Share Tech Mono',monospace" letter-spacing="2">PROGRESS</text>
+    <rect x="16" y="142" width="236" height="4" rx="2" fill="#00fff515"/>
+    <rect x="16" y="142" width="170" height="4" rx="2" fill="url(#barG2)">
+      <animate attributeName="width" from="0" to="170" dur="1.5s" fill="freeze"/>
+    </rect>
+    <text x="252" y="148" font-size="8" fill="#ffe600" font-family="'Share Tech Mono',monospace" text-anchor="end">72%</text>
+
+    <text x="16" y="162" font-size="8" fill="#00fff5" font-family="'Share Tech Mono',monospace" letter-spacing="1">github.com/vakrahul ↗</text>
+  </g>
+
+  <!-- CARD 2: ML Learning -->
+  <g class="card2" transform="translate(300,34)">
+    <rect width="268" height="166" rx="6" fill="#060a0f" stroke="#ff00aa" stroke-width="1" opacity="0.9"/>
+    <rect width="268" height="3" rx="2" fill="#ff00aa" opacity="0.8"/>
+    <circle cx="252" cy="20" r="5" fill="#ffe600">
+      <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="16" y="22" font-size="8" letter-spacing="3" fill="#ffe600" font-family="'Share Tech Mono',monospace">◉ LEARNING</text>
+    <text x="16" y="46" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">MACHINE</text>
+    <text x="16" y="62" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">LEARNING</text>
+
+    <line x1="16" y1="72" x2="252" y2="72" stroke="#ff00aa" stroke-width="0.5" opacity="0.3"/>
+
+    <text x="16" y="88" font-size="9" fill="#ff00aa" font-family="'Share Tech Mono',monospace">🧠 Focus Areas</text>
+    <text x="16" y="103" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">ML Fundamentals</text>
+    <text x="16" y="116" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">Intelligent Systems · Neural Nets</text>
+
+    <text x="16" y="136" font-size="7" fill="#ff00aa60" font-family="'Share Tech Mono',monospace" letter-spacing="2">MASTERY</text>
+    <rect x="16" y="142" width="236" height="4" rx="2" fill="#ff00aa15"/>
+    <rect x="16" y="142" width="153" height="4" rx="2" fill="#ff00aa">
+      <animate attributeName="width" from="0" to="153" dur="1.5s" fill="freeze" begin="0.3s"/>
+    </rect>
+    <text x="252" y="148" font-size="8" fill="#ffe600" font-family="'Share Tech Mono',monospace" text-anchor="end">65%</text>
+
+    <text x="16" y="162" font-size="8" fill="#ff00aa" font-family="'Share Tech Mono',monospace" letter-spacing="1">ADVANCING ↑ EVERY DAY</text>
+  </g>
+
+  <!-- CARD 3: AI Interviewer -->
+  <g class="card3" transform="translate(584,34)">
+    <rect width="300" height="166" rx="6" fill="#060a0f" stroke="#ffe600" stroke-width="1" opacity="0.9"/>
+    <rect width="300" height="3" rx="2" fill="#ffe600" opacity="0.8"/>
+    <circle cx="284" cy="20" r="5" fill="#ff00aa" class="blink" filter="url(#cardGlow)"/>
+
+    <text x="16" y="22" font-size="8" letter-spacing="3" fill="#ffe600" font-family="'Share Tech Mono',monospace">◈ OPEN FOR CONTRIBUTORS</text>
+    <text x="16" y="46" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">AI_</text>
+    <text x="16" y="62" font-size="18" font-family="'Share Tech Mono',monospace" font-weight="700" fill="#ffffff">INTERVIEWER</text>
+
+    <line x1="16" y1="72" x2="284" y2="72" stroke="#ffe600" stroke-width="0.5" opacity="0.3"/>
+
+    <text x="16" y="88" font-size="9" fill="#ffe600" font-family="'Share Tech Mono',monospace">🤝 Collaboration</text>
+    <text x="16" y="103" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">AI-powered mock interviews</text>
+    <text x="16" y="116" font-size="8" fill="#ffffff90" font-family="'Share Tech Mono',monospace">Open source · All skill levels welcome</text>
+
+    <text x="16" y="136" font-size="7" fill="#ffe60060" font-family="'Share Tech Mono',monospace" letter-spacing="2">COMPLETION</text>
+    <rect x="16" y="142" width="268" height="4" rx="2" fill="#ffe60015"/>
+    <rect x="16" y="142" width="188" height="4" rx="2" fill="#ffe600">
+      <animate attributeName="width" from="0" to="188" dur="1.5s" fill="freeze" begin="0.5s"/>
+    </rect>
+    <text x="284" y="148" font-size="8" fill="#ffe600" font-family="'Share Tech Mono',monospace" text-anchor="end">70%</text>
+
+    <text x="16" y="162" font-size="8" fill="#ffe600" font-family="'Share Tech Mono',monospace" letter-spacing="1">github.com/vakrahul/AI_INTERVIEWER ↗</text>
+  </g>
+</svg>
