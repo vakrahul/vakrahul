@@ -1,0 +1,165 @@
+<svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-20px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes float {
+        0%,100% { transform: translateY(0px); }
+        50%      { transform: translateY(-4px); }
+      }
+      @keyframes borderPulse {
+        0%,100% { stroke-opacity: 0.3; }
+        50%      { stroke-opacity: 0.9; }
+      }
+      @keyframes glitch {
+        0%,95%,100% { transform: translate(0); }
+        96% { transform: translate(-2px,1px); }
+        97% { transform: translate(2px,-1px); }
+        98% { transform: translate(-1px,2px); }
+        99% { transform: translate(1px,-2px); }
+      }
+      .chip { animation: slideIn 0.4s ease both, float 4s ease-in-out infinite; }
+      .chip:nth-child(1)  { animation-delay: 0.0s, 0.0s; }
+      .chip:nth-child(2)  { animation-delay: 0.1s, 0.3s; }
+      .chip:nth-child(3)  { animation-delay: 0.2s, 0.6s; }
+      .chip:nth-child(4)  { animation-delay: 0.3s, 0.9s; }
+      .chip:nth-child(5)  { animation-delay: 0.4s, 1.2s; }
+      .chip:nth-child(6)  { animation-delay: 0.5s, 1.5s; }
+      .chip:nth-child(7)  { animation-delay: 0.6s, 1.8s; }
+      .chip:nth-child(8)  { animation-delay: 0.7s, 2.1s; }
+      .chip:nth-child(9)  { animation-delay: 0.8s, 2.4s; }
+      .chip:nth-child(10) { animation-delay: 0.9s, 2.7s; }
+      .chip:nth-child(11) { animation-delay: 1.0s, 3.0s; }
+      .chip:nth-child(12) { animation-delay: 1.1s, 3.3s; }
+      .chip:nth-child(13) { animation-delay: 1.2s, 3.6s; }
+      .chip:nth-child(14) { animation-delay: 1.3s, 3.9s; }
+      .chip:nth-child(15) { animation-delay: 1.4s, 4.2s; }
+      .chip-border { animation: borderPulse 2s ease-in-out infinite; }
+      .title { animation: glitch 8s step-end infinite; fill: #00fff5; font-family: 'Share Tech Mono',monospace; }
+    </style>
+    <filter id="chipGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00fff510"/>
+      <stop offset="100%" stop-color="#ff00aa10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="160" fill="#060a0f"/>
+  <!-- top/bottom borders -->
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#00fff5" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="159" x2="900" y2="159" stroke="#00fff5" stroke-width="1" opacity="0.3"/>
+
+  <!-- Section label -->
+  <text x="20" y="24" font-size="9" letter-spacing="5" fill="#ff00aa" font-family="'Share Tech Mono',monospace" filter="url(#chipGlow)">⚡ TECHNICAL ARSENAL // LOADED</text>
+  <line x1="240" y1="19" x2="880" y2="19" stroke="#ff00aa" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- ROW 1 chips -->
+  <g id="chips-row1">
+    <!-- JAVA -->
+    <g class="chip" transform="translate(20,34)">
+      <rect width="76" height="34" rx="4" fill="url(#cg1)" stroke="#ff6b35" stroke-width="1" class="chip-border"/>
+      <text x="38" y="15" text-anchor="middle" font-size="13">☕</text>
+      <text x="38" y="27" text-anchor="middle" font-size="8" fill="#ff6b35" font-family="'Share Tech Mono',monospace" letter-spacing="1">JAVA</text>
+    </g>
+    <!-- SPRING -->
+    <g class="chip" transform="translate(104,34)">
+      <rect width="98" height="34" rx="4" fill="url(#cg1)" stroke="#6db33f" stroke-width="1" class="chip-border"/>
+      <text x="49" y="15" text-anchor="middle" font-size="13">🌱</text>
+      <text x="49" y="27" text-anchor="middle" font-size="8" fill="#6db33f" font-family="'Share Tech Mono',monospace" letter-spacing="1">SPRING BOOT</text>
+    </g>
+    <!-- REACT -->
+    <g class="chip" transform="translate(210,34)">
+      <rect width="80" height="34" rx="4" fill="url(#cg1)" stroke="#61dafb" stroke-width="1" class="chip-border"/>
+      <text x="40" y="15" text-anchor="middle" font-size="13">⚛</text>
+      <text x="40" y="27" text-anchor="middle" font-size="8" fill="#61dafb" font-family="'Share Tech Mono',monospace" letter-spacing="1">REACT</text>
+    </g>
+    <!-- PYTHON -->
+    <g class="chip" transform="translate(298,34)">
+      <rect width="86" height="34" rx="4" fill="url(#cg1)" stroke="#3776ab" stroke-width="1" class="chip-border"/>
+      <text x="43" y="15" text-anchor="middle" font-size="13">🐍</text>
+      <text x="43" y="27" text-anchor="middle" font-size="8" fill="#3776ab" font-family="'Share Tech Mono',monospace" letter-spacing="1">PYTHON</text>
+    </g>
+    <!-- TS -->
+    <g class="chip" transform="translate(392,34)">
+      <rect width="102" height="34" rx="4" fill="url(#cg1)" stroke="#007acc" stroke-width="1" class="chip-border"/>
+      <text x="51" y="15" text-anchor="middle" font-size="13">📘</text>
+      <text x="51" y="27" text-anchor="middle" font-size="8" fill="#007acc" font-family="'Share Tech Mono',monospace" letter-spacing="1">TYPESCRIPT</text>
+    </g>
+    <!-- JS -->
+    <g class="chip" transform="translate(502,34)">
+      <rect width="102" height="34" rx="4" fill="url(#cg1)" stroke="#f7df1e" stroke-width="1" class="chip-border"/>
+      <text x="51" y="15" text-anchor="middle" font-size="13">⚡</text>
+      <text x="51" y="27" text-anchor="middle" font-size="8" fill="#f7df1e" font-family="'Share Tech Mono',monospace" letter-spacing="1">JAVASCRIPT</text>
+    </g>
+    <!-- C++ -->
+    <g class="chip" transform="translate(612,34)">
+      <rect width="72" height="34" rx="4" fill="url(#cg1)" stroke="#00599c" stroke-width="1" class="chip-border"/>
+      <text x="36" y="15" text-anchor="middle" font-size="13">⚙</text>
+      <text x="36" y="27" text-anchor="middle" font-size="8" fill="#00599c" font-family="'Share Tech Mono',monospace" letter-spacing="1">C++</text>
+    </g>
+    <!-- DSA -->
+    <g class="chip" transform="translate(692,34)">
+      <rect width="72" height="34" rx="4" fill="url(#cg1)" stroke="#ff00aa" stroke-width="1" class="chip-border"/>
+      <text x="36" y="15" text-anchor="middle" font-size="13">🧮</text>
+      <text x="36" y="27" text-anchor="middle" font-size="8" fill="#ff00aa" font-family="'Share Tech Mono',monospace" letter-spacing="1">DSA</text>
+    </g>
+  </g>
+
+  <!-- ROW 2 chips -->
+  <g id="chips-row2">
+    <!-- MongoDB -->
+    <g class="chip" transform="translate(20,78)">
+      <rect width="94" height="34" rx="4" fill="url(#cg1)" stroke="#4ea94b" stroke-width="1" class="chip-border"/>
+      <text x="47" y="15" text-anchor="middle" font-size="13">🍃</text>
+      <text x="47" y="27" text-anchor="middle" font-size="8" fill="#4ea94b" font-family="'Share Tech Mono',monospace" letter-spacing="1">MONGODB</text>
+    </g>
+    <!-- SQL -->
+    <g class="chip" transform="translate(122,78)">
+      <rect width="66" height="34" rx="4" fill="url(#cg1)" stroke="#00f" stroke-width="1" class="chip-border"/>
+      <text x="33" y="15" text-anchor="middle" font-size="13">🗄</text>
+      <text x="33" y="27" text-anchor="middle" font-size="8" fill="#4479a1" font-family="'Share Tech Mono',monospace" letter-spacing="1">SQL</text>
+    </g>
+    <!-- Docker -->
+    <g class="chip" transform="translate(196,78)">
+      <rect width="84" height="34" rx="4" fill="url(#cg1)" stroke="#0db7ed" stroke-width="1" class="chip-border"/>
+      <text x="42" y="15" text-anchor="middle" font-size="13">🐳</text>
+      <text x="42" y="27" text-anchor="middle" font-size="8" fill="#0db7ed" font-family="'Share Tech Mono',monospace" letter-spacing="1">DOCKER</text>
+    </g>
+    <!-- Git -->
+    <g class="chip" transform="translate(288,78)">
+      <rect width="66" height="34" rx="4" fill="url(#cg1)" stroke="#f05033" stroke-width="1" class="chip-border"/>
+      <text x="33" y="15" text-anchor="middle" font-size="13">🌿</text>
+      <text x="33" y="27" text-anchor="middle" font-size="8" fill="#f05033" font-family="'Share Tech Mono',monospace" letter-spacing="1">GIT</text>
+    </g>
+    <!-- ML -->
+    <g class="chip" transform="translate(362,78)">
+      <rect width="80" height="34" rx="4" fill="url(#cg1)" stroke="#ff6f00" stroke-width="1" class="chip-border"/>
+      <text x="40" y="15" text-anchor="middle" font-size="13">🧠</text>
+      <text x="40" y="27" text-anchor="middle" font-size="8" fill="#ff6f00" font-family="'Share Tech Mono',monospace" letter-spacing="1">ML / AI</text>
+    </g>
+    <!-- REST -->
+    <g class="chip" transform="translate(450,78)">
+      <rect width="84" height="34" rx="4" fill="url(#cg1)" stroke="#00fff5" stroke-width="1" class="chip-border"/>
+      <text x="42" y="15" text-anchor="middle" font-size="13">🔌</text>
+      <text x="42" y="27" text-anchor="middle" font-size="8" fill="#00fff5" font-family="'Share Tech Mono',monospace" letter-spacing="1">REST API</text>
+    </g>
+    <!-- NODE -->
+    <g class="chip" transform="translate(542,78)">
+      <rect width="82" height="34" rx="4" fill="url(#cg1)" stroke="#6da55f" stroke-width="1" class="chip-border"/>
+      <text x="41" y="15" text-anchor="middle" font-size="13">🟢</text>
+      <text x="41" y="27" text-anchor="middle" font-size="8" fill="#6da55f" font-family="'Share Tech Mono',monospace" letter-spacing="1">NODE.JS</text>
+    </g>
+  </g>
+
+  <!-- animated data line at bottom -->
+  <rect x="0" y="140" width="900" height="12" fill="#00fff508"/>
+  <rect x="0" y="148" width="0" height="2" fill="url(#cg1)" rx="1">
+    <animate attributeName="width" from="0" to="900" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="20" y="157" font-size="7" fill="#00fff540" font-family="'Share Tech Mono',monospace" letter-spacing="2">SKILLS.MATRIX // 15 MODULES LOADED // ALL SYSTEMS NOMINAL</text>
+</svg>
