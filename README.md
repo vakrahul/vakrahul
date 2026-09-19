@@ -1,7 +1,7 @@
 <div align="center">
 
 # Hi there, I'm Rahul! 👋
-### 🚀 Full-Stack Developer • 🤖 ML Explorer • 🌐 Open Source Enthusiast
+###  Full-Stack Developer •  ML Explorer • 🌐 Open Source Enthusiast
 
 <br/>
 
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="./index.html"><b>✨ Click here to view the live animated version</b></a>
+  <a href="./index.html"><b>Click here to view the live animated version</b></a>
 </p>
 
 <p align="center">
@@ -25,14 +25,6 @@
 ### 🐍 The Contribution Snake
 <p align="center">
   <img src="https://raw.githubusercontent.com/vakrahul/vakrahul/output/github-snake.svg" alt="Snake animation" />
-</p>
-
----
-
-### 📊 GitHub Activity & Metrics
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vakrahul&show_icons=true&theme=tokyonight&hide_border=true&title_color=0070f3&icon_color=0070f3" alt="Rahul's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vakrahul&theme=tokyonight&hide_border=true&stroke=0070f3&ring=0070f3&fire=0070f3" alt="Rahul's Streak Stats" />
 </p>
 
 ---
