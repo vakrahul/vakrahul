@@ -5,9 +5,9 @@
 
 <br/>
 
-<!-- ASCII Face Portrait (Renders directly on GitHub) -->
+<!-- Pure White Movable ASCII Face Portrait -->
 <p align="center">
-  <img src="assest/rahul-ascii.svg" alt="Rahul ASCII Portrait" width="820" />
+  <img src="assest/rahul-ascii-art.svg" alt="Rahul ASCII Portrait" width="820" />
 </p>
 
 <p align="center">
