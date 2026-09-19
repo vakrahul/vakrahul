@@ -5,9 +5,9 @@
 
 <br/>
 
-<!-- Movable Globe Pure White ASCII Face Portrait -->
+<!-- High-Clarity Movable Globe Pure White ASCII Face Portrait -->
 <p align="center">
-  <img src="assest/rahul-ascii-globe.svg" alt="Rahul ASCII Portrait" width="820" />
+  <img src="assest/rahul-portrait-clear.svg" alt="Rahul ASCII Portrait" width="820" />
 </p>
 
 <p align="center">
